@@ -89,6 +89,10 @@ server.use(passport.initialize());
 //To use session with passport
 server.use(passport.session());
 
+server.get('/', (req, res) => {
+  res.json("Bienvenido a mi API de películas");
+});
+
 //Creating router
 server.use('/user', userRouter);
 server.use('/directors', directorsRouter);
