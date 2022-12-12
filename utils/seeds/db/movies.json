@@ -1,0 +1,74 @@
+[
+  {
+    "title": "The Matrix",
+    "director": "Hermanas Wachowski",
+    "year": 1999,
+    "genre": ["Acción"]
+  },
+  {
+    "title": "The Matrix Reloaded",
+    "director": "Hermanas Wachowski",
+    "year": 2003,
+    "genre": ["Acción"]
+  },
+  {
+    "title": "Buscando a Nemo",
+    "director": "Andrew Stanton",
+    "year": 2003,
+    "genre": ["Animación"]
+  },
+  {
+    "title": "Buscando a Dory",
+    "director": "Andrew Stanton",
+    "year": 2016,
+    "genre": ["Animación"]
+  },
+  {
+    "title": "Interestelar",
+    "director": "Christopher Nolan",
+    "year": 2014,
+    "genre": ["Ciencia ficción"]
+  },
+  {
+    "title": "50 primeras citas",
+    "director": "Peter Segal",
+    "year": 2004,
+    "genre": ["Comedia romántica"]
+  },
+  {
+    "title": "Operación Camarón",
+    "director": "Carlos Therón",
+    "year": 2021,
+    "genre": ["Comedia"]
+  },
+  {
+    "title": "Elvis",
+    "director": "Baz Luhrmann",
+    "year": 2022,
+    "genre": ["Drama", "Musical"]
+  },
+  {
+    "title": "Collateral Beauty",
+    "director": "David Frankel",
+    "year": 2016,
+    "genre": ["Drama", "Fantasía"]
+  },
+  {
+    "title": "Noticias del gran mundo",
+    "director": "Paul Greengrass",
+    "year": 2020,
+    "genre": ["Drama", "Western"]
+  },
+  {
+    "title": "Dune",
+    "director": "Denis Villeneuve",
+    "year": 2021,
+    "genre": ["Ciencia ficción", "Aventura"]
+  },
+  {
+    "title": "El teléfono del señor Harrigan",
+    "director": "John Lee Hancock",
+    "year": 2022,
+    "genre": ["Terror", "Drama"]
+  }
+]
