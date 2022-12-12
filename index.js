@@ -60,7 +60,7 @@ server.use(express.json());
 server.use(express.urlencoded({ extended: false }));
 
 //To static files (pictures, txt files, excels files, etc)
-server.use(express.static(path.join(__dirname, 'public')));
+//server.use(express.static(path.join(__dirname, 'public')));
 
 //To initialise and config passport
 require('./utils/authentication/passport.js');
