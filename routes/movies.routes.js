@@ -142,7 +142,7 @@ moviesRouter.get("/year/:year", async (req, res, next) => {
     } else {
       next(
         createError(
-          "No existe ninguna película estrenada a partir de ese año",
+          "No existe ninguna película estrenada en ese año",
           404
         )
       );
@@ -166,7 +166,7 @@ moviesRouter.post("/", [isAuthPassportAdmin], async (req, res, next) => {
   }
 });
 
-//to upload pictures in cloudinary
+//to create movies with pictures in cloudinary
 moviesRouter.post('/to-cloud', [isAuthPassportAdmin], [upload.single('picture'), uploadToCloudinary], async (req, res, next) => {
   try {
     //with spread operator we create a new copy and we´ll have all properties with all values
@@ -186,6 +186,7 @@ moviesRouter.delete("/:id", [isAuthPassportAdmin], async (req, res, next) => {
     const id = req.params.id;
     await Movie.findByIdAndDelete(id);
     return res.status(200).json("La película se ha eliminado correctamente");
+
   } catch (err) {
     next(err);
   }
@@ -236,7 +237,7 @@ moviesRouter.put("/:id", [isAuthPassportAdmin], async (req, res, next) => {
   }
 });
 
-//to update pictures
+//to update with pictures
 moviesRouter.put("/to-cloud-update/:id", [isAuthPassportAdmin], [upload.single('picture'), uploadToCloudinary], async (req, res, next) => {
   try {
     const id = req.params.id;

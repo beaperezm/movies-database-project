@@ -72,7 +72,7 @@ cinemasRouter.post('/', [isAuthPassportAdmin], async (req, res, next) => {
     }
 });
 
-//to upload pictures in cloudinary
+//to create cinemas with pictures in cloudinary
 cinemasRouter.post('/to-cloud-cinemas', [isAuthPassportAdmin], [upload.single('picture'), uploadToCloudinary], async (req, res, next) => {
     try {
        //req.file_url --> is the property appears in cloudinary.middleware.js to save the cloudinary safe URL

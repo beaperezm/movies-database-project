@@ -56,7 +56,7 @@ directorsRouter.get('/paginated-director', async (req, res, next) => {
     }
 });
 
-//post --> to Create with pictures
+//post --> to create directors with pictures
 directorsRouter.post('/to-cloud-director', [isAuthPassportAdmin], [upload.single('picture'), uploadToCloudinary], async (req, res, next) => {
     try {
         //with spread operator we create a new copy and we´ll have all properties with all values
@@ -82,7 +82,7 @@ directorsRouter.delete("/:id", [isAuthPassportAdmin], async (req, res, next) => 
   }
 });
 
-//to update pictures
+//to update with pictures
 directorsRouter.put("/to-cloud-update-director/:id", [isAuthPassportAdmin], [upload.single('picture'), uploadToCloudinary], async (req, res, next) => {
     try {
       const id = req.params.id;
